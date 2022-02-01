@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color0: #232938;
+    --color1: #f8f8f8;
+    --color2: #202020;
+    --color3: #6778A3;
+    --color4: #94ACEB;
+}
+
+::selection{
+    background-color: var(--color0);
+}
+
+body{
+    background-image: linear-gradient(to right, var(--color3), var(--color4));
+    color: var(--color1);
+}
+header{
+    background-color: var(--color2);
+    width: 100%;
+    height: 100px;
+    text-indent: 30px;
+    line-height: 100px;    
+    margin-bottom: 50px;
+    border-bottom: 5px solid var(--color4) ;
+}
+header h1{
+    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;
+}
+main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    position: relative;
+    width: 90%;
+    background-color: var(--color2);
+    padding: 8px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.container a{
+    color: var(--color1);
+    text-decoration: none;
+}
+/* Profile */
+#profile > p{
+    margin: 10px auto;
+    width: 60%;
+    font: normal 1.2rem monospace, sans-serif;
+}
+#profile > .btn{
+    width: 10%;
+    text-align: center;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-decoration: none;
+    padding: 8px;
+    margin: 15px auto;
+}
+#profile > .btn:hover{
+    background-color: var(--color3);
+}
+
+/* Hard Skills */
+#hard-skills .hard-skills-item{
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+#projects > #list-projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#list-projects > .project{
+    margin: 10px auto;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+
+/* Icons */
+.fab{
+    cursor: pointer;
+    font-size: 3em;
+    margin-right: 20px;
+}
+.fab:hover{
+    color: var(--color3);
+}
+
+#footer{
+    width: 100%;
+    height: 70px;
+    background-color: var(--color2);
+    margin-bottom: 0%;
+    line-height: 70px;    
+    text-align: center;
+}
+
+@media only screen and (max-width: 940px){
+    header > h1{
+        font-size: 2em;
+    }
+    #profile > .btn{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    header > h1{
+        font-size: 1em;
+    }
+    #hard-skills > .hard-skills-item{
+        display: flex;
+        flex-direction: column;
+    }
+    #hard-skills > .hard-skills-item > i{
+        margin-bottom: 15px;
+    }
+    #projects > #list-projects{
+        flex-direction: column;
+    }
+    #projects > #list-projects > .project{
+        margin-bottom: 20px;
+    }
+    #contact > #social-media{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact > #social-media i{
+        margin-bottom: 20px;
+    }
+}
