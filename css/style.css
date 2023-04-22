@@ -11,12 +11,13 @@
     --color0: #232938;
     --color1: #f8f8f8;
     --color2: #202020;
-    --color3: #6778A3;
-    --color4: #94ACEB;
+    --color3: #3c5a86;
+    --color4: #47daff;
 }
 
 ::selection{
-    background-color: var(--color0);
+    background-color: var(--color4);
+    color: var(--color3);
 }
 
 body{
